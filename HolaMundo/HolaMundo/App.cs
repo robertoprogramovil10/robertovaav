@@ -9,7 +9,7 @@ namespace HolaMundo
 		{	
 			return new ContentPage { 
 				Content = new Label {
-					Text = "Hola mundo!",
+					Text = "Roberto Vazquez Avila Cuenta 412090916!",
 					VerticalOptions = LayoutOptions.CenterAndExpand,
 					HorizontalOptions = LayoutOptions.CenterAndExpand,
 				},
