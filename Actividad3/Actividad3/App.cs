@@ -9,9 +9,11 @@ namespace Actividad3
 		{	
 			return new ContentPage { 
 				Content = new Label {
-					Text = "Hello, Forms!",
-					VerticalOptions = LayoutOptions.CenterAndExpand,
+					Text = "Cambiando color, fondo y ubicación Roberto Vazquez Avila!",
+					VerticalOptions = LayoutOptions.EndAndExpand,
 					HorizontalOptions = LayoutOptions.CenterAndExpand,
+					BackgroundColor = Color. Silver,
+					TextColor = Color. Green
 				},
 			};
 		}
