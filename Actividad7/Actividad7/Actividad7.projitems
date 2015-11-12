@@ -12,5 +12,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pagina1.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pagina2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pagina3.cs" />
   </ItemGroup>
 </Project>
