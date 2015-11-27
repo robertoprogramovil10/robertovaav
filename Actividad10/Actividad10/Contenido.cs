@@ -6,6 +6,23 @@ namespace Actividad10
 	public class Contenido: ContentPage
 	{
 		public Contenido ()
+
+		Entry usuario = new Entry { Placeholder = "Contenido" };
+		Entry clave = new Entry { Placeholder = "Contenido", IsPassword = true };
+		{
+		Button boton = new Button {
+			Text = "Contenido",
+			TextColor = Color.Blue,
+			BackgroundColor = Color.FromHex ("77D065") 
+		};
+
+		boton.Clicked += (sender, e) => {
+
+			if(usuario.Text.Equals("Contenido")){
+				Navigation.PushAsync(new Contenido());
+			}
+		};
+
 		{
 			//El control ListView muestra el contenido en forma de tabla 
 			//Con RowHeight le indicamos el alto de cada renglón
@@ -36,4 +53,4 @@ namespace Actividad10
 		}
 	}
 }
-
+}
