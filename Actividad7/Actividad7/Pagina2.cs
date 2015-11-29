@@ -3,9 +3,9 @@ using Xamarin.Forms;
 
 namespace Actividad7
 {
-	public class Pagina1: ContentPage
+	public class Pagina2: ContentPage
 	{
-		public Pagina1 ()
+		public Pagina2 ()
 		{
 			Label texto = new Label {
 				Text = "Página 2",
@@ -18,10 +18,8 @@ namespace Actividad7
 			};
 
 			boton.Clicked += (sender, e) => {
-				this.Navigation.PushAsync(new Pagina2());
+				this.Navigation.PushAsync(new Pagina3());
 			};
-
-			//Stacklayout permite apilar los controles verticalmente
 			StackLayout stackLayout = new StackLayout
 			{
 				Children =
@@ -30,12 +28,8 @@ namespace Actividad7
 					boton
 				}
 				};
-
-
-			//Como esta clase hereda de ContentPage, podemos usar estas propiedades directamente
 			this.Content = stackLayout;
 			this.Padding = new Thickness (5, Device.OnPlatform (20, 5, 5), 5, 5);
 		}
 	}
 }
-
