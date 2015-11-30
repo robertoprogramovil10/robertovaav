@@ -7,18 +7,18 @@ namespace Actividad9
 	{
 		public Login ()
 		{
-			Entry usuario = new Entry { Placeholder = "Usuario" };
+			Entry usuario = new Entry { Placeholder = "Clave" };
 			Entry clave = new Entry { Placeholder = "Clave", IsPassword = true };
 
 			Button boton = new Button {
-				Text = "Login",
-				TextColor = Color.White,
+				Text = "Clave",
+				TextColor = Color.Silver,
 				BackgroundColor = Color.FromHex ("77D065") 
 			};
 
 			boton.Clicked += (sender, e) => {
 
-				if(usuario.Text.Equals("usuario")){
+				if(usuario.Text.Equals("Clave")){
 					Navigation.PushAsync(new Contenido());
 				}
 			};
@@ -43,4 +43,4 @@ namespace Actividad9
 		}
 	}
 }
-
+	
