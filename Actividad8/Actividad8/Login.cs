@@ -32,7 +32,7 @@ namespace Actividad8
 					clave,
 					boton
 				}
-			};
+				};
 
 			//Como esta clase hereda de ContentPage, podemos usar estas propiedades directamente
 			this.Content = stackLayout;
@@ -40,4 +40,5 @@ namespace Actividad8
 		}
 	}
 }
+
 
