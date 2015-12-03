@@ -22,6 +22,11 @@ namespace Actividad12
 				label.Text = result;
 			};
 
+			var scanner = new ZXing.Mobile.MobileBarcodeScanner();
+			scanner.UseCustomOverlay = true; 
+			scanner.CustomOverlay = myCustomOverlay Instance; 
+			var result = async scanner.Scan();
+			//Handle result
 
 			// The root page of your application
 			MainPage = new ContentPage {
@@ -51,4 +56,3 @@ namespace Actividad12
 		}
 	}
 }
-
